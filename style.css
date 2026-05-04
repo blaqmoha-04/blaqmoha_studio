@@ -1,0 +1,162 @@
+*  {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+.hero-section{
+    width: 100vw;
+    max-width: 100vw;
+    height: 100vh;
+    background: linear-gradient(
+        rgba(0,0,0,.9),
+        rgba(0,0,0,.4)
+    ), url(tbgv.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+}
+
+ .hero-path{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    clip-path: polygon(40% 100%, 100% 0%, 100% 100%,0% 100%);
+    z-index: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    padding: 50px;
+}
+
+.logo-name {
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+span{
+    color: orange;
+}
+
+nav ul li{
+    display: inline;
+    margin-right: 30px;
+    font-size: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+nav ul li a:hover{
+    background: linear-gradient(to right, #eb9305, #f6010e);
+    transform: scale(1.2);
+    border: #eb9305;
+    border-radius: 30%;
+}
+
+.nav_btn{
+    padding: 9px 25px;
+    border: none;
+    border-radius: 20px;
+    font-weight: 600;
+    background-color: orange;
+}
+
+.nav_btn:hover {
+    background: linear-gradient(to right, #eb9305, #f6010e);
+    transform: scale(1.2);
+    border: #eb9305;
+}
+
+.hero_container{
+    position: relative;
+    z-index: 1;
+    width: 60%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.hero_text{
+    flex-basis: 40%;
+    margin-top: 8rem;
+}
+
+.imageofme{
+    flex-basis: 50%;
+    margin-top: 4rem;
+    padding-left: 50px;
+    margin-right: 20px;
+}
+
+.imageofme img{
+    width: 100%;
+    height: 91%;
+    /* padding-left: 50px; */
+    border: orange 20px solid;
+    border-radius: 30%;
+    background: rgba(0,0,0,0.9);
+}
+
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 70px;
+    color: orange;
+}
+
+strong{
+    font-weight: bolder;
+    font-size: 25px;
+
+}
+
+p{
+    font-size: 22px;
+    margin-bottom: 40px;
+    padding-top: 25px;
+}
+
+.btn, .btn2{
+    border-radius: 5px;
+    padding: 10px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all.5 ease;
+    border: none;
+}
+
+.btn{
+    background: #eb9305;
+    margin-right: 20px;
+}
+
+.btn2{
+    background: transparent;
+    border: 2px #eb9305 solid;
+    color: #eb9305;
+}
+
+.btn:hover{
+    background: linear-gradient(to right, #eb9305, #f6010e);
+    transform: scale(1.2);
+}
+
+.btn2:hover{
+    background:#eb9305;
+    transform: scale(1.2);
+    border: none;
+    color: black;
+}
